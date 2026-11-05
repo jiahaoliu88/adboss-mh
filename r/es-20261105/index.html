@@ -109,9 +109,9 @@ border-radius:20px;transition:.15s}
 <tr><td><b>BSR 走势</b></td>
 <td><span class="badge green">已拉到</span> 西柚 <span class="mono">get_asin_bsr_trends</span> 19 个 ASIN × 30 天</td>
 <td>用于交叉验证「广告投入是否换来排名改善」，不单独作为结论依据。</td></tr>
-<tr><td><b>紫鸟 API</b></td>
-<td><span class="badge amber">CLI 已通，但无本店授权</span> ziniao-cli 自检全部通过（Boss 账号、ZClaw Bridge 连通）；但平台授权查询显示 amazon-ads-api 仅覆盖另一家店铺，美惠（美区）与美惠-ES 均无 Ads 授权记录</td>
-<td>按约束未做任何页面操作。结论：<b>紫鸟目前取不到 ES 站的广告数据</b>，不是因为配置没接好，而是这家卖家号还没做 Amazon Ads 平台授权。广告/库存/成本仍以赛狐 ERP 为准，自然位以西柚为准，两边都不依赖紫鸟。</td></tr>
+<tr><td><b>紫鸟 / Amazon Ads API</b></td>
+<td><span class="badge green">已接入</span> ziniao-cli 自检全部通过（Boss 账号、Bridge 连通）；Ads API 取到美惠卖家号（A23T3KO9HTAVQO）<b>EU 大区 13 个站点 profile，含 ES</b>，与赛狐 241716 是同一个卖家号</td>
+<td>本报告广告数据仍以赛狐日报为准（能下钻到搜索词与广告位），紫鸟 Ads API 作为<b>独立复核源</b>：已提交 ES 站 SP campaign 汇总报告任务；<b>该任务在 10 分钟内仍为 PENDING，未在本次交付前拿到结果</b>，因此下表的广告数字全部来自赛狐日报，紫鸟仅作通道可用性验证。紫鸟不提供自然位，这部分仍由西柚负责。</td></tr>
 <tr><td><b>卖家精灵</b></td>
 <td><span class="badge green">已接入并用于本报告</span> 卖家精灵 MCP（ES 站，滚动近 30 天），对 B0C5QLT4X7 / B0GWJ3ZNGR / B0DL2XXPWY / B0GS92FGPW 做「品找词」，共 <b>205 个流量词</b>，含月搜索量、我方自然排名、自然/广告流量比、PPC 建议竞价</td>
 <td>阶段四的关键词表已改用卖家精灵口径（5.1 节），西柚负责自然位快照，两者交叉验证。仍有缺口：本次只调了「品找词」，<b>没有拉竞品 ASIN 明细</b>，所以 5.3 的竞品定投清单标注为未生成，不编造。</td></tr>
